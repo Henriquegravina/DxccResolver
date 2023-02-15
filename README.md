@@ -16,4 +16,4 @@ $npm install
 $node DXweb.js
 ```
 
-Open your browser at http://127.0.0.1:3000/
+Open your browser at http://127.0.0.1:3000/call/pu3ike or http://127.0.0.1:3000/dxcc/108
