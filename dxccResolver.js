@@ -61,7 +61,7 @@ class DxccEntities {
       new DxccEntity(/^E[A-H]8/,"Canary Is.", 29   ),
       new DxccEntity(/^E[A-H]9/,"Ceuta & Melilla", 32   ),
 
-        // Portugal
+      // Portugal
       new DxccEntity(/^CT[124567890]/,"Portugal", 272   ),
       new DxccEntity(/^CT3/,"Madeira Is.", 256   ),
       new DxccEntity(/^CU/,"Azores", 149   ),
@@ -79,7 +79,7 @@ class DxccEntities {
       new DxccEntity(/^4[XZ][12356890]/,"Israel", 336   ), 
       new DxccEntity(/^O[F-I]/,"Finland", 224   ),      
       new DxccEntity(/^PZ/,"Suriname", 140   ),
-      new DxccEntity(/^9A[012356]/,"Croatia", 497   ),
+      new DxccEntity(/^9A[0-6]/,"Croatia", 497   ),
       new DxccEntity(/^5V/,"Togo", 483   ),
       new DxccEntity(/^9H/,"Malta", 257),
       new DxccEntity(/^9K[012356789]/,"Kuwait", 348   ),
@@ -89,7 +89,18 @@ class DxccEntities {
       new DxccEntity(/^E[U-W]/,"Belarus", 27 ),
       new DxccEntity(/^Y[O-R]/,"Romenia", 275   ),
       new DxccEntity(/^P[A-I]/,"Netherlands", 263   ),
-      new DxccEntity(/^E7[2-9]/,"Bosnia-Herzegovina", 501   )
+      new DxccEntity(/^E7[2-9]/,"Bosnia-Herzegovina", 501   ),
+
+      // Sweden
+      new DxccEntity(/^((S[A-M][0-9])|7S|8S)/,"Sweden", 284   ),
+      // Poland
+      new DxccEntity(/^S[N-R][0-9]/,"Poland", 269   ),
+      // Syria
+      new DxccEntity(/^YK[0-9]/,"Syria", 384   ),
+      // Latvia 
+      new DxccEntity(/^YL[0-9]/,"Latvia", 145   ),
+
+      
 
     ];
   }
