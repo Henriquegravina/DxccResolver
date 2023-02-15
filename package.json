@@ -1,0 +1,14 @@
+{
+  "name": "DXweb",
+  "version": "1.0.0",
+  "description": "A simple service that returns the DXCC entity and code for a given ham radio call sign.",
+  "main": "DXweb.js",
+  "scripts": {
+    "start": "node DXweb.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "Henrique B. Gravina",
+  "license": "GPL"
+}
