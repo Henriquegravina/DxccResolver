@@ -10,9 +10,10 @@ I am creating this regex while usgin this to decode FT8 signals from QO-100 sate
 http://ft8-dash.ike.net.br
 
 
-# to test and run:
-
+## to test and run:
+```bash
 $npm install
 $node DXweb.js
+```
 
 Open your browser at http://127.0.0.1:3000/
