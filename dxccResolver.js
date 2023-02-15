@@ -52,7 +52,6 @@ class DxccEntities {
 
         //Slovenia S5(6)*              Slovenia
       new DxccEntity(/^S5[67]/,"Slovenia", 499   ),
-
       new DxccEntity(/^OE[0-9]/,"Austria", 206   ),
       new DxccEntity(/^F[0-9]/,"France", 227   ),
       new DxccEntity(/^FR[0-9]/,"Reunion I.", 453   ),
@@ -73,6 +72,7 @@ class DxccEntities {
       new DxccEntity(/^PY0F/,"Fernando de Noronha", 56   ),
       new DxccEntity(/^PY0S/,"St. Peter & St. Paul Rocks", 253   ),
       new DxccEntity(/^PY0T/,"Trindade & Martim Vaz Is.", 273   ),
+
 
       new DxccEntity(/^U[A-I][890]/,"Asiatic Russia", 15   ),
       new DxccEntity(/^VU[12356890]/,"India", 324   ),
