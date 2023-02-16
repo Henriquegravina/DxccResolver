@@ -40,8 +40,8 @@ class DxccEntities {
       //Denmark
       new DxccEntity(/^(O[U-W]|OZ)/,"Denmark", 221),
 
-      //  ON-OT*              Belgium                            EU    27    14    209
-      //Denmark
+
+      //Belgium
       new DxccEntity(/^(O[N-T])/,"Belgium", 209),
 
       // England
@@ -59,6 +59,8 @@ class DxccEntities {
       //UA-UI1-7,RA-RZ*     European Russia                    EU    (E)   16    054
       //new DxccEntity(/^/,"European Russia", 54   ),
       //UA2,RA2*            Kaliningrad                        EU    29    15    126
+      new DxccEntity(/^U[A-I][0-7]/,"European Russia", 54  ),
+      new DxccEntity(/^R[0-7]/,"European Russia", 15  ),
       new DxccEntity(/^U[A-I][890]/,"Asiatic Russia", 15  ),
       new DxccEntity(/^R[890]/,"Asiatic Russia", 15  ),
 
