@@ -17,6 +17,17 @@ app.get("/call/:callsign", (req, res) => {
   res.json(result);
 });
 
+
+// Resolv by Callsign whit suffix like /m /p 
+app.get("/call/:callsign/:suffix", (req, res) => {
+  const { callsign, suffix } = req.params;
+  const result = dxcc.getCountryFromCallsign(callsign.toUpperCase());
+  result.suffix = suffix.toUpperCase()
+  res.json(result);
+});
+
+
+
 // Resolv by dxcc number
 app.get("/dxcc/:dxcc_number", (req, res) => {
   const { dxcc_number } = req.params;
