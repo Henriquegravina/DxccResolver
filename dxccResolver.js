@@ -141,6 +141,12 @@ class DxccEntities {
       new DxccEntity(/^LZ[0-9]/,"Bulgaria", 212),
       //Benin
       new DxccEntity(/^TY[0-9]/,"Benin", 416),
+      //Qatar
+      new DxccEntity(/^A7/,"Qatar", 376),
+      //Bahrain
+      new DxccEntity(/^A9/,"Bahrain", 304),
+      //Pakistan
+      new DxccEntity(/^AP[0-9]/,"Pakistan", 372),
 
     ];
   }
