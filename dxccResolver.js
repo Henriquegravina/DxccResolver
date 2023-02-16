@@ -15,9 +15,6 @@ class DxccEntities {
   constructor() {
     this.dxccEntities = [
 
-      // Australia
-      new DxccEntity(/^VK/,"Australia", 36),
-  
       // USA
       new DxccEntity(/^(KL|AL|NL|WL)\d*[A-Z]*/ ,"Alaska", 6),
       new DxccEntity(/^A[A-K]/,"United States", 291),
@@ -26,7 +23,8 @@ class DxccEntities {
 
       new DxccEntity(/^VE/,"Canada", 362),
       new DxccEntity(/^D[A-R]/,"Germany", 230),
-      
+    
+      //Italy
       new DxccEntity(/^I[SM]0/,"Sardinia", 225),
       new DxccEntity(/^(?!I[SM]0)(I[A-Z]|I)[0-9]/,"Italy", 248),
 
@@ -37,12 +35,6 @@ class DxccEntities {
       new DxccEntity(/^(SV5|J45)/,"Dodecanese", 45),
       new DxccEntity(/^(SV9|J49)/,"Crete", 40),
       
-      //Denmark
-      new DxccEntity(/^(O[U-W]|OZ)/,"Denmark", 221),
-
-
-      //Belgium
-      new DxccEntity(/^(O[N-T])/,"Belgium", 209),
 
       // England
       new DxccEntity(/^M[A-Z,0-9]/,"England", 223   ),
@@ -55,7 +47,6 @@ class DxccEntities {
       new DxccEntity(/^(GW|GC)[A-Z\d]*/,"Wales", 294   ),
 
       // Russia
-
       //UA-UI1-7,RA-RZ*     European Russia                    EU    (E)   16    054
       //new DxccEntity(/^/,"European Russia", 54   ),
       //UA2,RA2*            Kaliningrad                        EU    29    15    126
@@ -79,16 +70,13 @@ class DxccEntities {
       new DxccEntity(/^CT3/,"Madeira Is.", 256   ),
       new DxccEntity(/^CU/,"Azores", 149   ),
 
-      
       //Brazil
       new DxccEntity(/^P[P-Y][0-9]/,"Brasil", 108   ),
       new DxccEntity(/^Z[V-Z][0-9]/,"Brasil", 108   ),
       new DxccEntity(/^PY0F/,"Fernando de Noronha", 56   ),
       new DxccEntity(/^PY0S/,"St. Peter & St. Paul Rocks", 253   ),
       new DxccEntity(/^PY0T/,"Trindade & Martim Vaz Is.", 273   ),
-
-
-      
+     
       new DxccEntity(/^VU[12356890]/,"India", 324   ),
       new DxccEntity(/^4[XZ][12356890]/,"Israel", 336   ), 
       new DxccEntity(/^O[F-I]/,"Finland", 224   ),      
@@ -105,6 +93,12 @@ class DxccEntities {
       new DxccEntity(/^P[A-I]/,"Netherlands", 263   ),
       new DxccEntity(/^E7[2-9]/,"Bosnia-Herzegovina", 501   ),
 
+      // Australia
+      new DxccEntity(/^VK/,"Australia", 36),
+      //Denmark
+      new DxccEntity(/^(O[U-W]|OZ)/,"Denmark", 221),
+      //Belgium
+      new DxccEntity(/^(O[N-T])/,"Belgium", 209),
       //Slovak Republic
       new DxccEntity(/^OM[0-9]/,"Slovak Republic", 504   ),
       //Czech Republic
@@ -139,7 +133,6 @@ class DxccEntities {
       new DxccEntity(/^Z3[0-9]/,"Macedonia", 502),
       //South Africa
       new DxccEntity(/^(Z[R-U])[0-9]/,"South Africa", 462   ),
-
       //Luxembourg
       new DxccEntity(/^LX[0-9]/,"Luxembourg", 254),
       //Lithuania
