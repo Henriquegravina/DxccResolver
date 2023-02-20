@@ -51,8 +51,10 @@ class DxccEntities {
       //new DxccEntity(/^/,"European Russia", 54   ),
       //UA2,RA2*            Kaliningrad                        EU    29    15    126
       new DxccEntity(/^U[A-I][0-7]/,"European Russia", 54  ),
-      new DxccEntity(/^R[0-7]/,"European Russia", 15  ),
+      new DxccEntity(/^R[A-I][0-7]/,"European Russia", 54  ),
+      new DxccEntity(/^R[0-7]/,"European Russia", 54  ),
       new DxccEntity(/^U[A-I][890]/,"Asiatic Russia", 15  ),
+      new DxccEntity(/^R[A-I][890]/,"Asiatic Russia", 15  ),
       new DxccEntity(/^R[890]/,"Asiatic Russia", 15  ),
 
 
