@@ -150,6 +150,17 @@ class DxccEntities {
       //Pakistan
       new DxccEntity(/^AP[0-9]/,"Pakistan", 372),
 
+      //Central Africa    
+      new DxccEntity(/^TL[0-9]/,"Central Africa", 408),
+      //Republic of the Congo
+      new DxccEntity(/^TN[0-9]/,"Republic of the Congo", 412),
+      //Gabon
+      new DxccEntity(/^TR[0-9]/,"Gabon", 420),
+      //Chad 
+      new DxccEntity(/^TT[0-9]/,"Chad", 410),
+      //Cote d'Ivoire
+      new DxccEntity(/^TU[0-9]/,"Cote D'Ivoire", 428),
+
     ];
   }
   
