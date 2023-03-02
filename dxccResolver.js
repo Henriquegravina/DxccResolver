@@ -15,6 +15,14 @@ class DxccEntities {
   constructor() {
     this.dxccEntities = [
 
+
+    //Agalega & St. Brandon Is.
+    new DxccEntity(/^3B[67]/,"Agalega & St. Brandon Is.", 004   ),
+    //Mauritius                          AF    53    39    165
+    new DxccEntity(/^3B[8]/,"Mauritius", 165   ),
+    //Rodriguez I.
+    new DxccEntity(/^3B[9]/,"Rodriguez I.", 207   ),
+
       // USA
       new DxccEntity(/^(KL|AL|NL|WL)\d*[A-Z]*/ ,"Alaska", 6),
       new DxccEntity(/^A[A-K]/,"United States", 291),
