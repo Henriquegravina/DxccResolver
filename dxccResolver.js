@@ -17,7 +17,7 @@ class DxccEntities {
 
 
     //Agalega & St. Brandon Is.
-    new DxccEntity(/^3B[67]/,"Agalega & St. Brandon Is.", 004   ),
+    new DxccEntity(/^3B[67]/,"Agalega & St. Brandon Is.", 4),
     //Mauritius                          AF    53    39    165
     new DxccEntity(/^3B[8]/,"Mauritius", 165   ),
     //Rodriguez I.
@@ -36,6 +36,8 @@ class DxccEntities {
       new DxccEntity(/^I[SM]0/,"Sardinia", 225),
       new DxccEntity(/^(?!I[SM]0)(I[A-Z]|I)[0-9]/,"Italy", 248),
 
+      //Serbia
+      new DxccEntity(/^Y[TU]/,"Serbia", 296),
         
       //Greece
       new DxccEntity(/^(?!(SV4|J45|SV9|J49))(S[VZ]|J4)/,"Greece", 236),
