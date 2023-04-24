@@ -15,23 +15,29 @@ class DxccEntities {
   constructor() {
     this.dxccEntities = [
 
-
-    //Agalega & St. Brandon Is.
-    new DxccEntity(/^3B[67]/,"Agalega & St. Brandon Is.", 4),
-    //Mauritius                          AF    53    39    165
-    new DxccEntity(/^3B[8]/,"Mauritius", 165   ),
-    //Rodriguez I.
-    new DxccEntity(/^3B[9]/,"Rodriguez I.", 207   ),
+      //Agalega & St. Brandon Is.
+      new DxccEntity(/^3B[67]/,"Agalega & St. Brandon Is.", 4),
+      //Mauritius                          AF    53    39    165
+      new DxccEntity(/^3B[8]/,"Mauritius", 165   ),
+      //Rodriguez I.
+      new DxccEntity(/^3B[9]/,"Rodriguez I.", 207   ),
 
       // USA
       new DxccEntity(/^(KL|AL|NL|WL)\d*[A-Z]*/ ,"Alaska", 6),
       new DxccEntity(/^A[A-K]/,"United States", 291),
       new DxccEntity(/^[KWN]/,"United States", 291),
 
-
+      // Canada
       new DxccEntity(/^VE/,"Canada", 362),
+      //Germany
       new DxccEntity(/^D[A-R]/,"Germany", 230),
     
+      //Estonia
+      new DxccEntity(/^ES/,"Estonia", 52),
+
+      //Lebanon
+      new DxccEntity(/^OD/,"Estonia", 354),
+
       //Italy
       new DxccEntity(/^I[SM]0/,"Sardinia", 225),
       new DxccEntity(/^(?!I[SM]0)(I[A-Z]|I)[0-9]/,"Italy", 248),
@@ -55,6 +61,10 @@ class DxccEntities {
       new DxccEntity(/^(GM|GS)[A-Z\d]*/,"Scotland", 279   ),
       new DxccEntity(/^(GU|GP)[A-Z\d]*/,"Guernsey", 106   ),
       new DxccEntity(/^(GW|GC)[A-Z\d]*/,"Wales", 294   ),
+      
+      // Ireland
+      new DxccEntity(/^EI/,"Ireland", 245),
+      new DxccEntity(/^EJ/,"Ireland", 245),
 
       // Russia
       //UA-UI1-7,RA-RZ*     European Russia                    EU    (E)   16    054
@@ -63,9 +73,12 @@ class DxccEntities {
       new DxccEntity(/^U[A-I][0-7]/,"European Russia", 54  ),
       new DxccEntity(/^R[A-I][0-7]/,"European Russia", 54  ),
       new DxccEntity(/^R[0-7]/,"European Russia", 54  ),
+      new DxccEntity(/^RM/,"European Russia", 54  ),
+      new DxccEntity(/^RQ/,"European Russia", 54  ),
       new DxccEntity(/^U[A-I][890]/,"Asiatic Russia", 15  ),
       new DxccEntity(/^R[A-I][890]/,"Asiatic Russia", 15  ),
       new DxccEntity(/^R[890]/,"Asiatic Russia", 15  ),
+      
 
 
       new DxccEntity(/^S5[0-9]/,"Slovenia", 499   ),
@@ -90,7 +103,9 @@ class DxccEntities {
       new DxccEntity(/^PY0T/,"Trindade & Martim Vaz Is.", 273   ),
      
       new DxccEntity(/^VU[12356890]/,"India", 324   ),
-      new DxccEntity(/^4[XZ][12356890]/,"Israel", 336   ), 
+
+      new DxccEntity(/^4[XZ][123567890]/,"Israel", 336   ), 
+      
       new DxccEntity(/^O[F-I]/,"Finland", 224   ),      
       new DxccEntity(/^PZ/,"Suriname", 140   ),
       new DxccEntity(/^9A[0-6]/,"Croatia", 497   ),
