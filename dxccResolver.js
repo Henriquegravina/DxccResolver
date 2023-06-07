@@ -75,15 +75,22 @@ class DxccEntities {
       new DxccEntity(/^R[0-7]/,"European Russia", 54  ),
       new DxccEntity(/^RM/,"European Russia", 54  ),
       new DxccEntity(/^RQ/,"European Russia", 54  ),
+      new DxccEntity(/^RK/,"European Russia", 54  ),
+      new DxccEntity(/^RP/,"European Russia", 54  ),
       new DxccEntity(/^U[A-I][890]/,"Asiatic Russia", 15  ),
       new DxccEntity(/^R[A-I][890]/,"Asiatic Russia", 15  ),
       new DxccEntity(/^R[890]/,"Asiatic Russia", 15  ),
       
-
+      //Vatican HV                  Vatican                            EU    28    15    295
+      new DxccEntity(/^HV/,"Vatican", 295  ),
 
       new DxccEntity(/^S5[0-9]/,"Slovenia", 499   ),
       new DxccEntity(/^OE[0-9]/,"Austria", 206   ),
+      
+      //FA t.m. FF & TM France
       new DxccEntity(/^F[0-9]/,"France", 227   ),
+      new DxccEntity(/^TM[0-9]/,"France", 227   ),
+
       new DxccEntity(/^FR[0-9]/,"Reunion I.", 453   ),
       new DxccEntity(/^E[A-H][0-57]/,"Spain", 281   ),
       new DxccEntity(/^E[A-H]6/,"Balearic Is.", 21   ),
@@ -120,6 +127,8 @@ class DxccEntities {
       new DxccEntity(/^P[A-I]/,"Netherlands", 263   ),
       new DxccEntity(/^E7[2-9]/,"Bosnia-Herzegovina", 501   ),
 
+      //YB-YH(40)*          Indonesia                          OC    51,54 28    327
+      new DxccEntity(/^(Y[B-H][0-9])/,"Indonesia", 327),
       // Australia
       new DxccEntity(/^VK/,"Australia", 36),
       //Denmark
