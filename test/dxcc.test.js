@@ -2,7 +2,7 @@ const { DxccEntities } = require("../dxccResolver.js");
 const dxcc = new DxccEntities();
 
 // Test to Dxcc code to country:
-test("GET to /dxcc/number", async () => {
+test("DXCC name by given number", async () => {
   //Agalega & St. Brandon Is.
   expect(dxcc.getCountryFromDxcc(4)).toEqual("Agalega & St. Brandon Is.");
   //Mauritius
