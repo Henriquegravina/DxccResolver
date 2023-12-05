@@ -3,7 +3,7 @@
 // 2023/02/14
 
 // DxccResolver
-const { DxccEntities } = require('./dxccResolver.js');
+const { DxccEntities } = require("./dxccResolver.js");
 const dxcc = new DxccEntities();
 
 //WebService:
@@ -17,22 +17,19 @@ app.get("/call/:callsign", (req, res) => {
   res.json(result);
 });
 
-
-// Resolv by Callsign whit suffix like /m /p 
+// Resolv by Callsign whit suffix like /m /p
 app.get("/call/:callsign/:suffix", (req, res) => {
   const { callsign, suffix } = req.params;
   const result = dxcc.getCountryFromCallsign(callsign.toUpperCase());
-  result.suffix = suffix.toUpperCase()
+  result.suffix = suffix.toUpperCase();
   res.json(result);
 });
-
-
 
 // Resolv by dxcc number
 app.get("/dxcc/:dxcc_number", (req, res) => {
   const { dxcc_number } = req.params;
   const result = dxcc.getCountryFromDxcc(dxcc_number);
-  res.json(result);
+  res.json({ dxcc_name: result });
 });
 
 app.listen(3000, () => {

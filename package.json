@@ -4,11 +4,16 @@
   "description": "A simple service that returns the DXCC entity and code for a given ham radio call sign.",
   "main": "DXweb.js",
   "scripts": {
-    "start": "node DXweb.js"
+    "start": "node DXweb.js",
+    "test": "npm jest",
+    "test:watch": "npm jest --watchAll"
   },
   "dependencies": {
     "express": "^4.17.1"
   },
   "author": "Henrique B. Gravina",
-  "license": "GPL"
+  "license": "GPL",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
