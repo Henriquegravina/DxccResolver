@@ -5,8 +5,8 @@
   "main": "DXweb.js",
   "scripts": {
     "start": "node DXweb.js",
-    "test": "npm jest",
-    "test:watch": "npm jest --watchAll"
+    "test": "jest",
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
     "express": "^4.17.1"
