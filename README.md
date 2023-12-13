@@ -1,6 +1,6 @@
 # Project DxccResolver
 
-The goal of this pet project is to identify the country ( DxccEntity ), 
+The goal of this pet project is to identify the country ( DxccEntity ),
 and the code ( Dxcc number ) based on the callsign of amateur radio.
 
 The regex is based on the file: http://www.arrl.org/files/file/DXCC/2013_Current_Deleted.txt
@@ -9,11 +9,17 @@ I am creating this regex while usgin this to decode FT8 signals from QO-100 sate
 
 http://ft8-dash.ike.net.br
 
-
 ## to test and run:
+
 ```bash
 $npm install
 $node DXweb.js
 ```
 
 Open your browser at http://127.0.0.1:3000/call/pu3ike or http://127.0.0.1:3000/dxcc/108
+
+You could test on vercel:
+
+https://dxcc-resolver.vercel.app/call/pu3ike
+
+https://dxcc-resolver.vercel.app/dxcc/108
