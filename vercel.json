@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "DXweb.js",
-      "use": "@now/node"
+      "use": "@vercel/node"
     }
   ],
   "routes": [
