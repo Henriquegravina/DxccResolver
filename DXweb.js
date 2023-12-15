@@ -1,5 +1,5 @@
 // Author: Henrique B. Gravina
-// This code is a base webserver to DXCC Resolver class.
+// This code is a basic webserver to DXCC Resolver class.
 // 2023/02/14
 
 // DxccResolver
