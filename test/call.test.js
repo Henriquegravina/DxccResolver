@@ -1,6 +1,28 @@
 const { DxccEntities } = require("../dxccResolver.js");
 const dxcc = new DxccEntities();
 
+// Brazil
+test("Brazil call tests", async () => {
+  expect(dxcc.getEntityFromCallsign("PU3IKE")).toEqual({ entity: "Brasil" });
+  expect(dxcc.getEntityFromCallsign("PY3WW")).toEqual({ entity: "Brasil" });
+  expect(dxcc.getEntityFromCallsign("PR8WW")).toEqual({ entity: "Brasil" });
+  expect(dxcc.getEntityFromCallsign("ZY0FUN")).toEqual({ entity: "Brasil" });
+});
+
+//England
+test("England call tests", async () => {
+  expect(dxcc.getEntityFromCallsign("G6WRW")).toEqual({ entity: "England" });
+  expect(dxcc.getEntityFromCallsign("M0PNN")).toEqual({ entity: "England" });
+  expect(dxcc.getEntityFromCallsign("MI0ILE")).toEqual({ entity: "England" });
+});
+
+//Italy
+test("Italy call tests", async () => {
+  expect(dxcc.getEntityFromCallsign("IK2WRI")).toEqual({ entity: "Italy" });
+  expect(dxcc.getEntityFromCallsign("IU8MHG")).toEqual({ entity: "Italy" });
+  expect(dxcc.getEntityFromCallsign("IZ1VWE")).toEqual({ entity: "Italy" });
+});
+
 // Test
 test("Return Entity from a CALL", async () => {
   //expect(dxcc.getEntityFromCallsign("")).toEqual({ entity: "" });
@@ -10,17 +32,6 @@ test("Return Entity from a CALL", async () => {
 
   //Belgium
   expect(dxcc.getEntityFromCallsign("ON4CGW")).toEqual({ entity: "Belgium" });
-
-  // Brazil
-  expect(dxcc.getEntityFromCallsign("PU3IKE")).toEqual({ entity: "Brasil" });
-  expect(dxcc.getEntityFromCallsign("PY3WW")).toEqual({ entity: "Brasil" });
-  expect(dxcc.getEntityFromCallsign("PR8WW")).toEqual({ entity: "Brasil" });
-  expect(dxcc.getEntityFromCallsign("ZY0FUN")).toEqual({ entity: "Brasil" });
-
-  //England
-  expect(dxcc.getEntityFromCallsign("G6WRW")).toEqual({ entity: "England" });
-  expect(dxcc.getEntityFromCallsign("M0PNN")).toEqual({ entity: "England" });
-  expect(dxcc.getEntityFromCallsign("MI0ILE")).toEqual({ entity: "England" });
 
   //Estonia
   expect(dxcc.getEntityFromCallsign("ES3RF")).toEqual({ entity: "Estonia" });
@@ -39,11 +50,6 @@ test("Return Entity from a CALL", async () => {
 
   //Israel
   expect(dxcc.getEntityFromCallsign("4Z75TL")).toEqual({ entity: "Israel" });
-
-  //Italy
-  expect(dxcc.getEntityFromCallsign("IK2WRI")).toEqual({ entity: "Italy" });
-  expect(dxcc.getEntityFromCallsign("IU8MHG")).toEqual({ entity: "Italy" });
-  expect(dxcc.getEntityFromCallsign("IZ1VWE")).toEqual({ entity: "Italy" });
 
   //Portugal
   expect(dxcc.getEntityFromCallsign("CT2GVH")).toEqual({ entity: "Portugal" });
