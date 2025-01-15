@@ -4,6 +4,14 @@ const dxcc = new DxccEntities();
 // Andorra
 expect(dxcc.getEntityFromCallsign("C31CT ")).toEqual({ entity: "Andorra" });
 
+//Algeria
+expect(dxcc.getEntityFromCallsign("7X2TT ")).toEqual({ entity: "Algeria" });
+
+//Armenia
+expect(dxcc.getEntityFromCallsign("EK/RX3DPK ")).toEqual({
+  entity: "Armenia",
+});
+
 // Brazil
 test("Brazil call tests", async () => {
   expect(dxcc.getEntityFromCallsign("PU3IKE")).toEqual({ entity: "Brasil" });
@@ -11,6 +19,15 @@ test("Brazil call tests", async () => {
   expect(dxcc.getEntityFromCallsign("PR8WW")).toEqual({ entity: "Brasil" });
   expect(dxcc.getEntityFromCallsign("ZY0FUN")).toEqual({ entity: "Brasil" });
 });
+
+//Belarus
+expect(dxcc.getEntityFromCallsign("EW8KO")).toEqual({ entity: "Belarus" });
+
+//Belgium
+expect(dxcc.getEntityFromCallsign("ON4CGW")).toEqual({ entity: "Belgium" });
+
+//Croatia
+expect(dxcc.getEntityFromCallsign("9A/OE3CQB")).toEqual({ entity: "Croatia" });
 
 //England
 test("England call tests", async () => {
@@ -29,12 +46,6 @@ test("Italy call tests", async () => {
 // Test
 test("Return Entity from a CALL", async () => {
   //expect(dxcc.getEntityFromCallsign("")).toEqual({ entity: "" });
-
-  //Belarus
-  expect(dxcc.getEntityFromCallsign("EW8KO")).toEqual({ entity: "Belarus" });
-
-  //Belgium
-  expect(dxcc.getEntityFromCallsign("ON4CGW")).toEqual({ entity: "Belgium" });
 
   //Estonia
   expect(dxcc.getEntityFromCallsign("ES3RF")).toEqual({ entity: "Estonia" });
@@ -56,7 +67,9 @@ test("Return Entity from a CALL", async () => {
 
   //Portugal
   expect(dxcc.getEntityFromCallsign("CT2GVH")).toEqual({ entity: "Portugal" });
-  expect(dxcc.getEntityFromCallsign("CS2025HNY ")).toEqual({ entity: "Portugal" });
+  expect(dxcc.getEntityFromCallsign("CS2025HNY ")).toEqual({
+    entity: "Portugal",
+  });
 
   //Romenia
   expect(dxcc.getEntityFromCallsign("YO7CW")).toEqual({ entity: "Romenia" });
@@ -73,6 +86,10 @@ test("Return Entity from a CALL", async () => {
   //Sweden
   expect(dxcc.getEntityFromCallsign("SM3LBN")).toEqual({ entity: "Sweden" });
 
+  // Denmark
+  expect(dxcc.getEntityFromCallsign("5Q1BM")).toEqual({ entity: "Denmark" });
+  expect(dxcc.getEntityFromCallsign("OZ1BM")).toEqual({ entity: "Denmark" });
+
   //Switzerland
   expect(dxcc.getEntityFromCallsign("HB9DVZ")).toEqual({
     entity: "Switzerland",
@@ -83,14 +100,18 @@ test("Return Entity from a CALL", async () => {
     entity: "Mayotte",
   });
 
-  //Armenia
-  expect(dxcc.getEntityFromCallsign("EK/RX3DPK ")).toEqual({
-    entity: "Armenia",
+  //Montenegro
+  expect(dxcc.getEntityFromCallsign("4O4A")).toEqual({
+    entity: "Montenegro",
   });
 
-//Montenegro
-expect(dxcc.getEntityFromCallsign("4O4A")).toEqual({
-  entity: "Montenegro",
-});
+  //Madagascar
+  expect(dxcc.getEntityFromCallsign("5R8IC")).toEqual({
+    entity: "Madagascar",
+  });
 
+  //West Malasya
+  expect(dxcc.getEntityFromCallsign("9M2CQC")).toEqual({
+    entity: "West Malasya",
+  });
 });

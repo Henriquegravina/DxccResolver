@@ -13,6 +13,10 @@ class DxccEntity {
 class DxccEntities {
   constructor() {
     this.dxccEntities = [
+      //Austria
+      new DxccEntity(/^OE[0-9]/, "Austria", 206),
+      new DxccEntity(/^4U100QO/, "Austria", 206),
+
       //Armenia
       new DxccEntity(/^EK/, "Armenia", 14),
 
@@ -21,6 +25,17 @@ class DxccEntities {
 
       //Agalega & St. Brandon Is.
       new DxccEntity(/^3B[67]/, "Agalega & St. Brandon Is.", 4),
+
+      //Algeria
+      new DxccEntity(/^7[T-Y]/, "Algeria", 400),
+
+      // Canada
+      new DxccEntity(/^VE/, "Canada", 362),
+
+      // Croatia
+      new DxccEntity(/^9A/, "Croatia", 497),
+      new DxccEntity(/^9A[A-Z]/, "Croatia", 497),
+
       //Mauritius                          AF    53    39    165
       new DxccEntity(/^3B[8]/, "Mauritius", 165),
       //Rodriguez I.
@@ -31,8 +46,6 @@ class DxccEntities {
       new DxccEntity(/^A[A-K]/, "United States", 291),
       new DxccEntity(/^[KWN]/, "United States", 291),
 
-      // Canada
-      new DxccEntity(/^VE/, "Canada", 362),
       //Germany
       new DxccEntity(/^D[A-R]/, "Germany", 230),
 
@@ -107,7 +120,6 @@ class DxccEntities {
       new DxccEntity(/^HV/, "Vatican", 295),
 
       new DxccEntity(/^S5[0-9]/, "Slovenia", 499),
-      new DxccEntity(/^OE[0-9]/, "Austria", 206),
 
       //FA t.m. FF & TM France
       new DxccEntity(/^F[0-9]/, "France", 227),
@@ -141,7 +153,7 @@ class DxccEntities {
 
       new DxccEntity(/^O[F-I]/, "Finland", 224),
       new DxccEntity(/^PZ/, "Suriname", 140),
-      new DxccEntity(/^9A[0-6]/, "Croatia", 497),
+
       new DxccEntity(/^5V/, "Togo", 483),
       new DxccEntity(/^9H/, "Malta", 257),
       new DxccEntity(/^9K[012356789]/, "Kuwait", 348),
@@ -159,6 +171,8 @@ class DxccEntities {
       new DxccEntity(/^VK/, "Australia", 36),
       //Denmark
       new DxccEntity(/^(O[U-W]|OZ)/, "Denmark", 221),
+      new DxccEntity(/^(5[PQ]|5P[A-Z])/, "Denmark", 221),
+
       //Belgium
       new DxccEntity(/^(O[N-T])/, "Belgium", 209),
       //Slovak Republic
@@ -226,6 +240,14 @@ class DxccEntities {
 
       //Montenegro
       new DxccEntity(/^4O[4-7]/, "Montenegro", 514),
+
+      //Malagasy Republic/Madagascar
+      new DxccEntity(/^5[R-S][A-Z]/, "Madagascar", 438),
+      new DxccEntity(/^5[R-S]/, "Madagascar", 438),
+
+      //West Malasya 299
+      new DxccEntity(/^9M[A-Z]/, "West Malasya", 299),
+      new DxccEntity(/^9M[2-4]/, "West Malasya", 299),
     ];
   }
 
