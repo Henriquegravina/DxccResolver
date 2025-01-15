@@ -245,6 +245,9 @@ class DxccEntities {
       new DxccEntity(/^5[R-S][A-Z]/, "Madagascar", 438),
       new DxccEntity(/^5[R-S]/, "Madagascar", 438),
 
+      //Oman
+      new DxccEntity(/^A4/, "Oman", 370),
+
       //West Malasya 299
       new DxccEntity(/^9M[A-Z]/, "West Malasya", 299),
       new DxccEntity(/^9M[2-4]/, "West Malasya", 299),

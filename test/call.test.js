@@ -114,4 +114,9 @@ test("Return Entity from a CALL", async () => {
   expect(dxcc.getEntityFromCallsign("9M2CQC")).toEqual({
     entity: "West Malasya",
   });
+
+  //Oman
+  expect(dxcc.getEntityFromCallsign("A41ZZ")).toEqual({
+    entity: "Oman",
+  });
 });
