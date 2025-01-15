@@ -46,6 +46,9 @@ class DxccEntities {
       new DxccEntity(/^A[A-K]/, "United States", 291),
       new DxccEntity(/^[KWN]/, "United States", 291),
 
+      //United Arab Emirates
+      new DxccEntity(/^A6/, "United Arab Emirates", 391),
+
       //Germany
       new DxccEntity(/^D[A-R]/, "Germany", 230),
 
