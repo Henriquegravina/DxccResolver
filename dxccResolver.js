@@ -143,6 +143,9 @@ class DxccEntities {
       new DxccEntity(/^CT3/, "Madeira Is.", 256),
       new DxccEntity(/^CU/, "Azores", 149),
 
+      // Paraguay 132
+      new DxccEntity(/^ZP/, "Paraguay", 132),
+
       //Brazil
       new DxccEntity(/^P[P-Y][0-9]/, "Brasil", 108),
       new DxccEntity(/^Z[V-Z][0-9]/, "Brasil", 108),
