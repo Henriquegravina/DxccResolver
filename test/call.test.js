@@ -125,6 +125,11 @@ test("Return Entity from a CALL", async () => {
     entity: "United Arab Emirates",
   });
 
+  //United Nations HQ
+  expect(dxcc.getEntityFromCallsign("4U1UN ")).toEqual({
+    entity: "United Nations HQ",
+  });
+
   //West Malasya
   expect(dxcc.getEntityFromCallsign("9M2CQC")).toEqual({
     entity: "West Malasya",

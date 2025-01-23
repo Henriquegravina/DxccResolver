@@ -254,6 +254,9 @@ class DxccEntities {
       //Oman
       new DxccEntity(/^A4/, "Oman", 370),
 
+      //4U_UN* United Nations HQ NA 08 05 289
+      new DxccEntity(/^4U[0-9]UN/, "United Nations HQ", 289),
+
       //West Malasya 299
       new DxccEntity(/^9M[A-Z]/, "West Malasya", 299),
       new DxccEntity(/^9M[2-4]/, "West Malasya", 299),
