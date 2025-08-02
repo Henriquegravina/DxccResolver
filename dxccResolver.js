@@ -132,8 +132,11 @@ class DxccEntities {
 
       new DxccEntity(/^FR[0-9]/, "Reunion I.", 453),
 
+      //Spain
       new DxccEntity(/^E[A-H][0-57]/, "Spain", 281),
-      new DxccEntity(/^A[MO]/, "Spain", 281),
+      new DxccEntity(/^A[MNO]/, "Spain", 281),
+      
+
 
       new DxccEntity(/^E[A-H]6/, "Balearic Is.", 21),
       new DxccEntity(/^E[A-H]8/, "Canary Is.", 29),
