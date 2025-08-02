@@ -62,6 +62,9 @@ test("India call tests", async () => {
   
 });
 
+//Indonesia
+expect(dxcc.getEntityFromCallsign("8A100IARU")).toEqual({ entity: "Indonesia" });
+
 //Lakshadweep Is.
 test("Lakshadweep Is. call tests", async () => {
   expect(dxcc.getEntityFromCallsign("VU7T")).toEqual({ entity: "Lakshadweep Is." });

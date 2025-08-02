@@ -185,10 +185,13 @@ class DxccEntities {
       new DxccEntity(/^E[U-W]/, "Belarus", 27),
       new DxccEntity(/^Y[O-R]/, "Romenia", 275),
       new DxccEntity(/^P[A-I]/, "Netherlands", 263),
-      new DxccEntity(/^E7[02-9]/, "Bosnia-Herzegovina", 501),
+
+      new DxccEntity(/^E7/, "Bosnia-Herzegovina", 501),
 
       //YB-YH(40)*          Indonesia                          OC    51,54 28    327
       new DxccEntity(/^(Y[B-H][0-9])/, "Indonesia", 327),
+      new DxccEntity(/^8A/, "Indonesia", 327),
+
       // Australia
       new DxccEntity(/^VK/, "Australia", 36),
       //Denmark
