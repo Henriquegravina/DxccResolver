@@ -6,7 +6,7 @@ test("DXCC name by given code number", async () => {
   //Agalega & St. Brandon Is.
   expect(dxcc.getCountryFromDxcc(4)).toEqual("Agalega & St. Brandon Is.");
 
-  
+
 
   //Canada
   expect(dxcc.getCountryFromDxcc(362)).toEqual("Canada");
@@ -16,12 +16,18 @@ test("DXCC name by given code number", async () => {
   
   //Estonia
   expect(dxcc.getCountryFromDxcc(52)).toEqual("Estonia");
-  
+
+  //Faroe Is.
+  expect(dxcc.getCountryFromDxcc(222)).toEqual("Faroe Is.");
+
+  expect(dxcc.getCountryFromDxcc(424)).toEqual("Ghana");
+
   //Germany
   expect(dxcc.getCountryFromDxcc(230)).toEqual("Germany");
   
   //Greece
   expect(dxcc.getCountryFromDxcc(236)).toEqual("Greece");
+  
   
   //Italy
   expect(dxcc.getCountryFromDxcc(225)).toEqual("Sardinia");
