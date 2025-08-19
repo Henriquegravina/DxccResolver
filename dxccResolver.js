@@ -253,8 +253,20 @@ class DxccEntities {
       //Pakistan
       new DxccEntity(/^AP[0-9]/, "Pakistan", 372),
 
+      //Cameroon
+      new DxccEntity(/^TJ/, "Cameroon", 406),
+      
+
       //Central Africa
       new DxccEntity(/^TL[0-9]/, "Central Africa", 408),
+      //Chad
+      new DxccEntity(/^TT[0-9]/, "Chad", 410),
+      //Cote d'Ivoire
+      new DxccEntity(/^TU[0-9]/, "Cote D'Ivoire", 428),
+
+      
+      
+      
       //Republic of the Congo
       new DxccEntity(/^TN[0-9]/, "Republic of the Congo", 412),
 
@@ -268,11 +280,7 @@ class DxccEntities {
       new DxccEntity(/^9G/, "Ghana", 424),
 
 
-      //Chad
-      new DxccEntity(/^TT[0-9]/, "Chad", 410),
-      //Cote d'Ivoire
-      new DxccEntity(/^TU[0-9]/, "Cote D'Ivoire", 428),
-
+      
       //Lakshadweep Is.
       new DxccEntity(/^VU7/, "Lakshadweep Is.",142),
 

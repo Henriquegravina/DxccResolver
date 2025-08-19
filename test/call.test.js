@@ -27,6 +27,10 @@ expect(dxcc.getEntityFromCallsign("EW8KO")).toEqual({ entity: "Belarus" });
 //Belgium
 expect(dxcc.getEntityFromCallsign("ON4CGW")).toEqual({ entity: "Belgium" });
 
+//Cameroon
+expect(dxcc.getEntityFromCallsign("TJ1GD")).toEqual({ entity: "Cameroon" });
+
+
 //Croatia
 expect(dxcc.getEntityFromCallsign("9A/OE3CQB")).toEqual({ entity: "Croatia" });
 
