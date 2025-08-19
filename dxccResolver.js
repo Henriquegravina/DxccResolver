@@ -29,12 +29,45 @@ class DxccEntities {
       //Algeria
       new DxccEntity(/^7[T-Y]/, "Algeria", 400),
 
+      // Angola
+      new DxccEntity(/^D[23]/, "Angloa", 401),
+
+      // Belarus
+      new DxccEntity(/^E[U-W]/, "Belarus", 27),
+      
+
+      //Brazil
+      new DxccEntity(/^P[P-Y][0-9]/, "Brasil", 108),
+      new DxccEntity(/^Z[V-Z][0-9]/, "Brasil", 108),
+      new DxccEntity(/^PY0F/, "Fernando de Noronha", 56),
+      new DxccEntity(/^PY0S/, "St. Peter & St. Paul Rocks", 253),
+      new DxccEntity(/^PY0T/, "Trindade & Martim Vaz Is.", 273),
+
       // Canada
       new DxccEntity(/^VE/, "Canada", 362),
 
       // Croatia
       new DxccEntity(/^9A/, "Croatia", 497),
       new DxccEntity(/^9A[A-Z]/, "Croatia", 497),
+
+      //Cameroon
+      new DxccEntity(/^TJ/, "Cameroon", 406),
+
+      //Central Africa
+      new DxccEntity(/^TL[0-9]/, "Central Africa", 408),
+
+      //Chad
+      new DxccEntity(/^TT[0-9]/, "Chad", 410),
+
+      // China
+      new DxccEntity(/^BG/, "China", 318),
+      new DxccEntity(/^BI/, "China", 318),
+      new DxccEntity(/^BD/, "China", 318),
+      new DxccEntity(/^B[0-9]/, "China", 318),
+      
+      //Cote d'Ivoire
+      new DxccEntity(/^TU[0-9]/, "Cote D'Ivoire", 428),
+
 
       //Mauritius                          AF    53    39    165
       new DxccEntity(/^3B[8]/, "Mauritius", 165),
@@ -153,13 +186,7 @@ class DxccEntities {
       // Paraguay 132
       new DxccEntity(/^ZP/, "Paraguay", 132),
 
-      //Brazil
-      new DxccEntity(/^P[P-Y][0-9]/, "Brasil", 108),
-      new DxccEntity(/^Z[V-Z][0-9]/, "Brasil", 108),
-      new DxccEntity(/^PY0F/, "Fernando de Noronha", 56),
-      new DxccEntity(/^PY0S/, "St. Peter & St. Paul Rocks", 253),
-      new DxccEntity(/^PY0T/, "Trindade & Martim Vaz Is.", 273),
-
+      
       new DxccEntity(/^VU[12356890]/, "India", 324),
       new DxccEntity(/^VU4/, "Andaman & Nicobar Is.",11),
 
@@ -175,14 +202,6 @@ class DxccEntities {
       new DxccEntity(/^9K[012356789]/, "Kuwait", 348),
       new DxccEntity(/^C5[A-Z]/, "The Gambia", 422),
 
-      new DxccEntity(/^BG/, "China", 318),
-      new DxccEntity(/^BI/, "China", 318),
-      new DxccEntity(/^BD/, "China", 318),
-      new DxccEntity(/^B[0-9]/, "China", 318),
-      
-      
-      new DxccEntity(/^D[23]/, "Angloa", 401),
-      new DxccEntity(/^E[U-W]/, "Belarus", 27),
       new DxccEntity(/^Y[O-R]/, "Romenia", 275),
       new DxccEntity(/^P[A-I]/, "Netherlands", 263),
 
@@ -253,17 +272,7 @@ class DxccEntities {
       //Pakistan
       new DxccEntity(/^AP[0-9]/, "Pakistan", 372),
 
-      //Cameroon
-      new DxccEntity(/^TJ/, "Cameroon", 406),
       
-
-      //Central Africa
-      new DxccEntity(/^TL[0-9]/, "Central Africa", 408),
-      //Chad
-      new DxccEntity(/^TT[0-9]/, "Chad", 410),
-      //Cote d'Ivoire
-      new DxccEntity(/^TU[0-9]/, "Cote D'Ivoire", 428),
-
       
       
       
