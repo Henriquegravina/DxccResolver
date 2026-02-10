@@ -29,7 +29,7 @@ app.get("/call/:callsign/:suffix", (req, res) => {
 app.get("/dxcc/:dxcc_number", (req, res) => {
   const { dxcc_number } = req.params;
   const result = dxcc.getCountryFromDxcc(dxcc_number);
-  res.json({ dxcc_name: result });
+  res.json(result);
 });
 
 app.listen(3000, () => {
