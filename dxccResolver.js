@@ -160,7 +160,7 @@ class DxccEntities {
 
       // === 8-prefix ===
       //Indonesia
-      new DxccEntity(/^8A/, "Indonesia", 327, "OC", 51, 28),
+      new DxccEntity(/^8[A-I]/, "Indonesia", 327, "OC", 51, 28),
 
       //Barbados
       new DxccEntity(/^8P/, "Barbados", 62, "NA", 11, 8),
@@ -251,9 +251,13 @@ class DxccEntities {
       new DxccEntity(/^B[U-X]/, "Taiwan", 386, "AS", 44, 24),
 
       //China
+      new DxccEntity(/^BA/, "China", 318, "AS", 44, 24),
       new DxccEntity(/^BG/, "China", 318, "AS", 44, 24),
+      new DxccEntity(/^BH/, "China", 318, "AS", 44, 24),
       new DxccEntity(/^BI/, "China", 318, "AS", 44, 24),
+      new DxccEntity(/^BT/, "China", 318, "AS", 44, 24),
       new DxccEntity(/^BD/, "China", 318, "AS", 44, 24),
+      new DxccEntity(/^BY/, "China", 318, "AS", 44, 24),
       new DxccEntity(/^B[0-9]/, "China", 318, "AS", 44, 24),
 
       // === C-prefix ===
@@ -509,7 +513,7 @@ class DxccEntities {
       new DxccEntity(/^(SV9|J49)/, "Crete", 40, "EU", 28, 20),
 
       //Greece
-      new DxccEntity(/^(?!(SV4|J45|SV9|J49))(S[VZ]|J4)/, "Greece", 236, "EU", 28, 20),
+      new DxccEntity(/^(?!(SV5|J45|SV9|J49))(S[VZ]|J4)/, "Greece", 236, "EU", 28, 20),
 
       //Japan
       new DxccEntity(/^J[A-S]/, "Japan", 339, "AS", 45, 25),

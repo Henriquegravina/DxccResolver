@@ -40,6 +40,8 @@ test("China call tests", async () => {
   expect(dxcc.getEntityFromCallsign("BI1MHK")).toEqual({ entity: "China" });
   expect(dxcc.getEntityFromCallsign("B100IARU")).toEqual({ entity: "China" });
   expect(dxcc.getEntityFromCallsign("BD9GQ")).toEqual({ entity: "China" });
+  expect(dxcc.getEntityFromCallsign("BA4TGI")).toEqual({ entity: "China" });
+  expect(dxcc.getEntityFromCallsign("BH2VSQ")).toEqual({ entity: "China" });
 });
 
 //England
@@ -68,6 +70,7 @@ test("India call tests", async () => {
 
 //Indonesia
 expect(dxcc.getEntityFromCallsign("8A100IARU")).toEqual({ entity: "Indonesia" });
+  expect(dxcc.getEntityFromCallsign("8D80TEL")).toEqual({ entity: "Indonesia" });
 
 //Lakshadweep Is.
 test("Lakshadweep Is. call tests", async () => {
@@ -128,6 +131,7 @@ test("Return Entity from a CALL", async () => {
 
   //Greece
   expect(dxcc.getEntityFromCallsign("SV1CEV")).toEqual({ entity: "Greece" });
+  expect(dxcc.getEntityFromCallsign("SV4ILY")).toEqual({ entity: "Greece" });
 
   //India
   expect(dxcc.getEntityFromCallsign("VU2SAA")).toEqual({ entity: "India" });
