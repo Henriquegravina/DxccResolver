@@ -697,10 +697,10 @@ class DxccEntities {
       //Greece (SV/SZ/J4 handled under J-prefix)
 
       //Sweden
-      new DxccEntity(/^S[A-M][0-9]/, "Sweden", 284, "EU", 18, 14),
+      new DxccEntity(/^S[A-M]/, "Sweden", 284, "EU", 18, 14),
 
       //Poland
-      new DxccEntity(/^S[N-R][0-9]/, "Poland", 269, "EU", 28, 15),
+      new DxccEntity(/^S[N-R]/, "Poland", 269, "EU", 28, 15),
 
       //Sudan
       new DxccEntity(/^ST/, "Sudan", 466, "AF", 47, 34),

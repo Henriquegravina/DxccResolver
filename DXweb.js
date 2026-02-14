@@ -17,12 +17,20 @@ app.get("/call/:callsign", (req, res) => {
   res.json(result);
 });
 
-// Resolv by Callsign whit suffix like /m /p
+// Resolv by Callsign with prefix like SM/F5VMJ or suffix like F5VMJ/M
 app.get("/call/:callsign/:suffix", (req, res) => {
   const { callsign, suffix } = req.params;
-  const result = dxcc.getCountryFromCallsign(callsign.toUpperCase());
-  result.suffix = suffix.toUpperCase();
-  res.json(result);
+  const prefixResult = dxcc.getCountryFromCallsign(callsign.toUpperCase());
+  if (prefixResult.entity !== "Unknown") {
+    prefixResult.callsign = suffix.toUpperCase();
+    prefixResult.prefix = callsign.toUpperCase();
+    res.json(prefixResult);
+  } else {
+    const result = dxcc.getCountryFromCallsign(suffix.toUpperCase());
+    result.callsign = callsign.toUpperCase();
+    result.suffix = suffix.toUpperCase();
+    res.json(result);
+  }
 });
 
 // Resolv by dxcc number

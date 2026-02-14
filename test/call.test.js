@@ -153,6 +153,7 @@ test("Return Entity from a CALL", async () => {
 
   //Sweden
   expect(dxcc.getEntityFromCallsign("SM3LBN")).toEqual({ entity: "Sweden" });
+  expect(dxcc.getEntityFromCallsign("SM")).toEqual({ entity: "Sweden" });
 
   // Denmark
   expect(dxcc.getEntityFromCallsign("5Q1BM")).toEqual({ entity: "Denmark" });
